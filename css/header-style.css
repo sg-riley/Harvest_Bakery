@@ -1,0 +1,119 @@
+.headerStyle {
+  background-color: #664229;
+  padding: 1em;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.headerStyle h1 {
+  text-align: left;
+  font-family: Cinzel, serif;
+  font-size: 1.5rem;
+  color: #faebd7;
+  font-weight: 450;
+}
+
+.menuContainer {
+  position: relative;
+  width: fit-content;
+}
+
+.menu {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: hidden;
+  position: absolute;
+  /* top: 100%; */
+  margin-top: 0.1em;
+  background-color: #664229;
+  width: inherit;
+  height: fit-content;
+}
+
+.menu ul {
+  text-align: center;
+  list-style-type: none;
+  /* padding: none;
+  margin: none; */
+  width: 100%;
+  /* align-items: stretch; */
+}
+
+.menu li {
+  margin: none;
+  color: white;
+  margin: inherit;
+  width: 100%;
+  padding: 1rem;
+}
+
+.menu ul li a {
+  padding: 0;
+}
+
+.menu li:hover {
+  background-color: hsl(25, 43%, 25%);
+  z-index: 0;
+}
+
+.menuContainer:hover .menu,
+.menu:hover {
+  visibility: visible;
+}
+
+.listStyle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listStyle ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.listStyle li {
+  display: inline-block;
+  background-color: hsla(25, 43%, 35%, 0.9);
+}
+
+.listStyle li a {
+  display: block;
+  color: rgb(205, 197, 197);
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  transition: ease-in-out 300ms;
+}
+
+.listStyle li a:hover {
+  background-color: hsl(25, 43%, 25%);
+  cursor: pointer;
+  color: #faebd7;
+}
+
+.select a {
+  background-color: #664229;
+  color: #fff;
+}
+
+@media screen and (max-width: 512px) {
+  .listStyle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .listStyle h1 {
+    margin-bottom: 0.5em;
+  }
+
+  .listStyle li a {
+    padding: 0.5rem 1rem;
+  }
+}

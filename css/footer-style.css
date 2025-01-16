@@ -1,0 +1,37 @@
+.footerStyle {
+  display: flex;
+  padding: 1em;
+  background-color: #664229;
+  color: #faebd7;
+  flex-wrap: wrap;
+}
+
+.footerStyle img {
+  margin: 0.5em 2em;
+  padding: 1em;
+  width: 10%;
+  min-width: 150px;
+}
+
+.textContainer {
+  margin: 0.5em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.textContainer ul li {
+  list-style: none;
+  margin-bottom: 8px;
+}
+
+.textContainer ul li a {
+  text-decoration: none;
+  color: #faebd7;
+  transition: ease-in-out 300ms;
+}
+
+.textContainer li a:hover {
+  cursor: pointer;
+  color: #d7de6f;
+}
